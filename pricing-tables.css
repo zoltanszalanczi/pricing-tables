@@ -1,0 +1,54 @@
+.pricing-table{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 60vh;
+  grid-column-gap: 15px;
+}
+
+@media (max-width: 768px){
+  .pricing-table{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-row-gap: 10px;
+    padding: 10px;
+  }
+}
+
+body{
+  text-align: center;
+}
+
+.free, .basic, .premium{
+  background-color: lightgray;
+  border-radius: 10px;
+}
+
+.version, .price, .description{
+  line-height: 3rem;
+}
+
+.price{
+  background-color: red;
+}
+
+.button {
+  display: inline-block;
+  background-color: darkblue;
+  color: white;
+  padding: 10px 40px;
+  border: 2px solid white;
+  border-radius: 40px;
+}
+
+.button:hover{
+  color:darkblue;
+  border: 2px solid darkblue;
+  background-color: white;
+}
+
+ul{
+  padding-top: .625rem;
+  text-align: left;
+  padding-left: 5rem;
+}
